@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="25dp"
+        android:paddingTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/buttonBack"
+                android:paddingVertical="5dp"
+                android:paddingRight="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:srcCompat="@mipmap/backarrow"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="QUIZ"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            app:srcCompat="@mipmap/zegotinha2"/>
+
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18dp"
+            android:paddingHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            android:text="Responda o questionário de sintomas para avaliarmos sua situação!"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="15dp">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:text="Sintomas mais comuns:"/>
+
+                    <CheckBox android:id="@+id/checkbox1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/darker_gray"
+                        android:text="Febre"/>
+                    <CheckBox android:id="@+id/checkbox2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/darker_gray"
+                        android:text="Tosse seca"/>
+                    <CheckBox android:id="@+id/checkbox3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="18dp"
+                        android:textColor="@android:color/darker_gray"
+                        android:text="Cansaço"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:text="Sintomas menos comuns:"/>
+
+
+
+
+                <CheckBox android:id="@+id/checkbox4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Dor no corpo"/>
+                <CheckBox android:id="@+id/checkbox5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Diarreia"/>
+                <CheckBox android:id="@+id/checkbox6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Dor de garganta"/>
+                <CheckBox android:id="@+id/checkbox7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Dor de cabeça"/>
+                <CheckBox android:id="@+id/checkbox8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Conjutivite"/>
+                <CheckBox android:id="@+id/checkbox9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Perda de paladar e olfato"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:text="Sintomas graves:"/>
+
+                <CheckBox android:id="@+id/checkbox10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Dificuldade de respirar ou falta de ar"/>
+                <CheckBox android:id="@+id/checkbox11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Dor ou pressão no peito"/>
+                <CheckBox android:id="@+id/checkbox12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Perda de fala ou movimento"/>
+
+
+
+                <Button
+                    android:id="@+id/buttonEnviar"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:paddingHorizontal="50dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:text="Enviar" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

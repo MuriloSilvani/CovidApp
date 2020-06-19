@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoAccountActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="25dp"
+            android:paddingTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/buttonBack"
+                    android:paddingVertical="5dp"
+                    android:paddingRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:srcCompat="@mipmap/backarrow"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="COVID-19"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                app:srcCompat="@mipmap/zegotinha2" />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="25dp"
+            android:paddingVertical="15dp">
+
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:textSize="15dp"
+                        android:text="Username *"/>
+                    <TextView
+                        android:paddingLeft="7dp"
+                        android:id="@+id/erroUsername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="#f00"
+                        android:text=""/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/inputUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16dp"
+                    android:inputType="text"
+                    android:text="murilosilvani"/>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:textSize="15dp"
+                        android:text="Name *"/>
+                    <TextView
+                        android:paddingLeft="7dp"
+                        android:id="@+id/erroName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="#f00"
+                        android:text=""/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/inputName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16dp"
+                    android:inputType="text"
+                    android:text="Murilo Silvani"/>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:textSize="15dp"
+                        android:text="Birth *"/>
+                    <TextView
+                        android:paddingLeft="7dp"
+                        android:id="@+id/erroBirth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="#f00"
+                        android:text=""/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/inputBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16dp"
+                    android:inputType="date"
+                    android:text="10/06/2000"/>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:textSize="15dp"
+                        android:text="Email *"/>
+                    <TextView
+                        android:paddingLeft="7dp"
+                        android:id="@+id/erroEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="#f00"
+                        android:text=""/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/inputEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16dp"
+                    android:inputType="text"
+                    android:text="murilo.silvani@unoesc.edu.br"/>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:textSize="15dp"
+                        android:text="Password *"/>
+                    <TextView
+                        android:paddingLeft="7dp"
+                        android:id="@+id/erroPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="#f00"
+                        android:text=""/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/inputPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16dp"
+                    android:inputType="textPassword"
+                    android:text="12345"/>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:textSize="15dp"
+                        android:text="Confirm Password *"/>
+                    <TextView
+                        android:paddingLeft="7dp"
+                        android:id="@+id/erroConfirmPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="#f00"
+                        android:text=""/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/inputConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16dp"
+                    android:inputType="textPassword"
+                    android:text="12345"/>
+
+                <Button
+                    android:layout_gravity="center"
+                    android:id="@+id/buttonSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:paddingHorizontal="50dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:text="Save" />
+
+
+        </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

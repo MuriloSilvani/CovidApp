@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="25dp"
+                android:paddingTop="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/buttonBack"
+                        android:paddingVertical="5dp"
+                        android:paddingRight="80dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        app:srcCompat="@mipmap/backarrow"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="COVID-19"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="28dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+
+                <ImageView
+                    android:id="@+id/add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    app:srcCompat="@mipmap/zegotinha2"/>
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="15dp">
+
+                <Button
+                    android:id="@+id/buttonQuiz"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:background="@android:color/holo_blue_dark"
+                    android:text="Fazer avaliação"/>
+
+                <Button
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/buttonStats"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:background="@android:color/holo_blue_dark"
+                    android:text="Estatísticas"/>
+
+                <LinearLayout
+                    android:id="@+id/click1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@mipmap/zegotinha2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="O que é COVID-19"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/info1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/click2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@mipmap/zegotinha2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="O que é o coronavírus?"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/info2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TextView>
+                <LinearLayout
+                    android:id="@+id/click3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@mipmap/zegotinha2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="Quais são os sintomas"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/info3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TextView>
+                <LinearLayout
+                    android:id="@+id/click4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@mipmap/zegotinha2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="Como é transmitido"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/info4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TextView>
+                <LinearLayout
+                    android:id="@+id/click5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@mipmap/zegotinha2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="Diagnóstico"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/info5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TextView>
+                <LinearLayout
+                    android:id="@+id/click6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@mipmap/zegotinha2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="Como se proteger"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/info6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TextView>
+                <LinearLayout
+                    android:id="@+id/click7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@mipmap/zegotinha2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="Dicas para viajantes"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/info7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TextView>
+                <LinearLayout
+                    android:id="@+id/click8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@mipmap/zegotinha2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="Se eu ficar doente"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/info8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TextView>
+                <LinearLayout
+                    android:id="@+id/click9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@mipmap/zegotinha2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="Serviço de Saúde"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/info9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TextView>
+            </LinearLayout>
+        </ScrollView>
+
+
+        </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
